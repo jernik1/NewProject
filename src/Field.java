@@ -11,7 +11,12 @@ public class Field {
             field[i][lineNumber] = ' ';
         }
     }
-
+    private void showLine(int lineNumber){
+        for (int i = 0;i <  FIELD_SIZE;i++){
+            field[i][lineNumber] = ' ';
+            showCell(i, lineNumber);
+        }
+    }
     public void eraseField() {
         for (int i = 0; i < FIELD_SIZE; i++) {
                 eraseLine(i);
@@ -20,7 +25,7 @@ public class Field {
     public void showField(){
         System.out.println();
         for (int i = 0;i < FIELD_SIZE; i++) {
-                showCell(i);
+                showLine(i);
             }
         System.out.println();
     }
