@@ -18,8 +18,15 @@ public class Main {
         //example2.staticField = 6;
         System.out.println(ExampleStaticClass.staticField + " , " + ExampleStaticClass.staticField);
 
+        Field field = new Field();
+        field.eraseField();
+        field.showField();
 
+       // for (int i=0;i <= 100; i++) {
+         //   System.out.println(i);
+        //}
+
+        }
 
 
     }
-}
