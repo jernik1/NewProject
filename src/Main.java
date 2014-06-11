@@ -3,30 +3,17 @@
  */
 public class Main {
 
-    public static void main(String[] args){
-        //ExampleStaticClass - класс
-        //example - обект
-        ExampleStaticClass example = new ExampleStaticClass();
-        //class level field - поле класса
-        ExampleStaticClass.staticField = 5;
-        example.nonStaticField = 4;
-        //example.staticField = 5;
-
-        ExampleStaticClass example2 = new ExampleStaticClass();
-        example2.nonStaticField = 5;
-        ExampleStaticClass.staticField = 6;
-        //example2.staticField = 6;
-        System.out.println(ExampleStaticClass.staticField + " , " + ExampleStaticClass.staticField);
-
+    public static void main(String[] args) {
         Field field = new Field();
-        field.eraseField();
         field.showField();
+        field.eraseField();
 
-       // for (int i=0;i <= 100; i++) {
-         //   System.out.println(i);
+
+        // for (int i=0;i <= 100; i++) {
+        //   System.out.println(i);
         //}
 
-        }
+    }
 
 
     }
